@@ -1,0 +1,271 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+header {
+  height: 30rem;
+  background-image: url('../images/banner.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  max-width: 960px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.banner {
+  display: flex;
+  font-family: Helvetica;
+  font-size: 1rem;
+  color: white;
+  background-color: cadetblue;
+  margin: 1rem auto 0 auto;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+nav span {
+  padding-left: 2rem;
+}
+
+#menu {
+  display: none;
+}
+
+.headline {
+  background-color: white;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  margin-left: 40%;
+  margin-right: -2rem;
+}
+
+.headline h1 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: 0.67em 0;
+}
+
+.overview {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  width: 5rem;
+  margin: 0 3rem;
+}
+
+.item p {
+  font-family: Helvetica;
+  text-align: center;
+  line-height: 1.4;
+}
+
+#paper img {
+  width: 3.5rem;
+}
+
+#ruler img, #truck img {
+  width: 5rem;
+}
+
+.info {
+  margin-top: 3rem;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.box {
+  width: 35%;
+  margin: 0 2.5%;
+}
+
+.title {
+  background-color: cadetblue;
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.title h6 {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.content p {
+  font-family: Helvetica;
+  line-height: 1.4;
+}
+
+footer {
+  margin-top: 5rem;
+  background-color: azure;
+  width: 100%;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+}
+
+.copyright img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+footer p {
+  font-family: Helvetica;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .banner {
+    margin: 0;
+  }
+
+  header {
+    height: 22rem;
+  }
+
+  .headline {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .headline h1 {
+    font-size: 1.33rem;
+  }
+
+  footer {
+    margin-bottom: 10%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .banner {
+    margin: 0;
+  }
+
+  .logo p {
+    display: none;
+  }
+
+  nav span {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .headline {
+    padding: 0.5rem 0;
+    margin: 9rem 0 0 0;
+    width: 100%;
+  }
+
+  .headline h1 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .overview {
+    margin-top: 3.77rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    justify-content: space-around;
+  }
+
+  .item p {
+    font-family: Helvetica;
+    font-size: 0.77rem;
+  }
+
+  div#truck, div#ruler {
+    margin-top: 1.54rem;
+  }
+
+  .info {
+    margin-top: 3.77rem;
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .title {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 0.75rem 0;
+  }
+
+  .content p {
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    margin: 1rem 0.5rem 4rem 0.5rem;
+  }
+
+  footer p {
+    display: none;
+  }
+
+  .container footer {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .copyright img {
+    margin: 0 auto;
+  }
+}
